@@ -1,0 +1,48 @@
+.menu ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  padding: 0;
+}
+.menu a {
+  position: relative;
+  text-decoration: none;
+  color: #4d4747;
+  font-size: 18px;
+  padding: 5px 0;
+  outline: none; 
+}
+.menu a::before {
+  content: "★";
+  font-size: 14px;
+  margin-right: 6px;
+  color: transparent;
+}
+.menu a::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #2e052b;
+}
+.menu a:hover {
+  color: #2e052b;
+}
+.menu a:hover::before {
+  color: #2e052b;
+}
+.menu a:hover::after {
+  width: 100%;
+}
+.menu a:focus {
+  outline: 2px dashed #2e052b;
+  outline-offset: 4px;
+}
+.menu .activo a {
+  color: #2e052b;
+}
+.menu .activo a::after {
+  width: 100%;
+}
