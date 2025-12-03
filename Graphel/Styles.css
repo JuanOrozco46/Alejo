@@ -1,0 +1,237 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #35424a;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: 3px solid #0080c8;
+}
+
+header h1 {
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+header h1 span {
+    color: #0080c8;
+}
+
+header .menu {
+    float: right;
+    margin-top: 10px;
+}
+
+header .menu li {
+    display: inline;
+    padding: 0 20px;
+}
+
+header .menu a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header .menu a:hover,
+header .menu a.active {
+    color: #0080c8;
+    font-weight: bold;
+}
+
+.showcase {
+    min-height: 300px;
+    background: url('images/cabecera.jpg') no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.showcase img {
+    display: none;
+}
+
+.showcase h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.showcase p {
+    font-size: 20px;
+    margin-top: 0;
+}
+
+.newsletter {
+    padding: 15px;
+    color: #fff;
+    background: #35424a;
+}
+
+.newsletter h1 {
+    float: left;
+    margin: 0;
+    font-size: 24px;
+}
+
+.newsletter form {
+    float: right;
+    margin-top: 5px;
+}
+
+.newsletter input[type="email"] {
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+    border: none;
+}
+
+.newsletter button {
+    height: 35px;
+    background: #e55322;
+    border: none;
+    padding: 0 20px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.boxes-container {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.box {
+    flex: 1;
+}
+
+.box img {
+    width: 90px;
+}
+
+.main-container {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.content-left {
+    flex: 2;
+}
+
+.sidebar-right {
+    flex: 1;
+}
+
+.dark-box {
+    background: #35424a;
+    color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.sidebar-box h3 {
+    margin-top: 0;
+}
+
+.img-content img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 15px;
+}
+
+.service-box {
+    background: #e6e6e6;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.service-box h3 {
+    margin-top: 0;
+    color: #000;
+}
+
+.contact-form .form-group {
+    margin-bottom: 15px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+.contact-form textarea {
+    height: 120px;
+}
+
+.contact-form .btn-main {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #e55322;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact-form .btn-main:hover {
+    background: #c44219;
+}
+
+.map-container img {
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 3px;
+    background: #fff;
+    margin-top: 15px;
+    box-sizing: border-box;
+}
+
+footer {
+    padding: 20px;
+    margin-top: 20px;
+    color: #fff;
+    background-color: #0080c8;
+    text-align: center;
+}

@@ -1,63 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Styless.css">
-    <title>Graphel</title>
+    <link rel="stylesheet" href="Styles.css">
+    <title>Graphel - Inicio</title>
 </head>
 
 <body>
     <header>
-        <h1>Diseño Multimedia</h1>
-        <div class="menu">
-            <ul>
-                <li><a href="#">INICIO</a></li>
-                <li><a href="#">NOSOTROS</a></li>
-                <li><a href="#">SERVICIO</a></li>
-                <li><a href="#">CONTACTO</a></li>
-            </ul>
+        <div class="container">
+            <h1>Diseño <span>Multimedia</span></h1>
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html" class="active">INICIO</a></li>
+                    <li><a href="nosotros.html">NOSOTROS</a></li>
+                    <li><a href="servicios.html">SERVICIOS</a></li>
+                    <li><a href="contacto.html">CONTACTO</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
-    <container class="principal">
-        <div class="img">
+
+    <section class="showcase">
+        <div class="container">
             <img src="/Graphel/images/cabecera.jpg" alt="cabecera">
-            <div class="texto">
-                <h1>Expertos en Tecnología Web</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis, unde ducimus cum vel cumque quae
-                    magni.</p>
-            </div>
+            <h1>Expertos en Tecnologías Web</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima beatae aspernatur alias, commodi molestiae accusantium.</p>
         </div>
-    </container>
-    <div class="submenu">
-        <h1>Suscríbete a nuestro boletín</h1>
-        <form action="/enviar" method="POST">
-        <label for="correo">Correo</label>
-        <input type ="email" id="correo" name=" correo" placeholder="Ingrese el Email..." >
-        <button>Subscribete</button>
-        </form>
-    </div>
-    <container clss="lenguajes">
-        <div class="html5">
-            <img src="/Graphel/images/logo_html.png" alt="html">
-            <h2>HTML5</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+    </section>
+
+    <section class="newsletter">
+        <div class="container">
+            <h1>Suscríbete a nuestro boletín</h1>
+            <form action="/enviar" method="POST">
+                <input type="email" id="correo" name="correo" placeholder="Ingrese el Email...">
+                <button type="submit">Suscribirse</button>
+            </form>
         </div>
-        <div class="css3">
-            <img src="/Graphel/images/logo_css.png" alt="CSS">
-            <h2>CSS3</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, quam quos laboriosam doloremque beatae ipsa sit velit, minus aliquid recusandae iure explicabo praesentium ea qui voluptatem magnam, dignissimos provident odit.</p>
+    </section>
+
+    <section class="boxes-container container">
+        <div class="box">
+            <img src="/Graphel/images/logo_html.png" alt="Logo HTML5">
+            <h3>HTML5</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies.</p>
         </div>
-        <div class="diseñoGrafico">
-            <img src="/Graphel/images/logo_brush.png" alt="diseño">
-            <h2>Diseño Gráfico</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, deserunt eos blanditiis aperiam rerum corporis, nesciunt at esse inventore alias perferendis vitae. Possimus aliquam impedit explicabo pariatur, nulla deserunt dolorem!</p>
+
+        <div class="box">
+            <img src="/Graphel/images/logo_css.png" alt="Logo CSS3">
+            <h3>CSS3</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies.</p>
         </div>
-    </container>
+
+        <div class="box">
+            <img src="/Graphel/images/logo_brush.png" alt="Logo Diseño">
+            <h3>Diseño Gráfico</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies.</p>
+        </div>
+    </section>
+
     <footer>
         <h3>Graphel Desarrollo Web, Copyright © 2017</h3>
     </footer>
 </body>
-
 </html>

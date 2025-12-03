@@ -1,52 +1,65 @@
-!<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Styless.css">
-    <title>Graphel</title>
+    <link rel="stylesheet" href="Styles.css"> <title>Graphel - Nosotros</title>
 </head>
 
 <body>
     <header>
-        <h1>Diseño Multimedia</h1>
-        <div class="menu">
-            <ul>
-                <li><a href="index.html">INICIO</a></li>
-                <li><a href="#">NOSOTROS</a></li>
-                <li><a href="#">SERVICIO</a></li>
-                <li><a href="#">CONTACTO</a></li>
-            </ul>
+        <div class="container">
+            <h1>Diseño <span>Multimedia</span></h1>
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="nosotros.html" class="active">NOSOTROS</a></li>
+                     <li><a href="servicios.html">SERVICIOS</a></li>
+                    <li><a href="contacto.html">CONTACTO</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
-    
-    <div class="submenu">
-        <h1>Suscríbete a nuestro boletín</h1>
-        <form action="/enviar" method="POST">
-        <label for="correo">Correo</label>
-        <input type ="email" id="correo" name=" correo" placeholder="Ingrese el Email..." >
-        <button>Subscribete</button>
-        </form>
-    </div>
-    <div class="nosotros">
-        <h3>Nosotros</h3>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores delectus, mollitia eligendi ducimus vel sed sunt corrupti possimus sequi consequatur libero animi repellat iste quidem quo, doloremque tenetur voluptatum. Quasi!</p>
-    </div>
-    <div class="nosotros2">
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora vero voluptate dolor consectetur rem sed, commodi corrupti nesciunt atque? Perferendis ab illum voluptas quo ipsam, enim ullam commodi quis. Consequatur?</p>
-    </div>
-    <div class="queHacemos">
-        <h3>Que hacemos</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, necessitatibus commodi tempore id magnam ipsum ab minima quod praesentium deleniti. Sed et placeat illo incidunt, perspiciatis officia eos consequatur facilis.</p>
-    </div>
-    <div class="img">
-        <img src="/Graphel/images/logo_brush.png" alt="cafe">
-    </div>
+
+    <section class="newsletter">
+        <div class="container">
+            <h1>Suscríbete a nuestro boletín</h1>
+            <form action="/enviar" method="POST">
+                <input type="email" id="correo" name="correo" placeholder="Ingrese el Email...">
+                <button type="submit">Suscribirse</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="main-container container">
+        
+        <article class="content-left">
+            <div class="nosotros-info">
+                <h3>Nosotros</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores delectus, mollitia eligendi ducimus vel sed sunt corrupti possimus sequi consequatur libero animi repellat iste quidem quo, doloremque tenetur voluptatum. Quasi!</p>
+            </div>
+            
+            <div class="dark-box">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora vero voluptate dolor consectetur rem sed, commodi corrupti nesciunt atque? Perferendis ab illum voluptas quo ipsam, enim ullam commodi quis. Consequatur?</p>
+            </div>
+            
+            <div class="img-content">
+                <img src="/Graphel/images/891.jpg" alt="Imagen de oficina"> 
+            </div>
+        </article>
+
+        <aside class="sidebar-right">
+            <div class="dark-box sidebar-box">
+                <h3>Que hacemos</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, necessitatibus commodi tempore id magnam ipsum ab minima quod praesentium deleniti. Sed et placeat illo incidunt, perspiciatis officia eos consequatur facilis.</p>
+            </div>
+        </aside>
+
+    </section>
 
     <footer>
         <h3>Graphel Desarrollo Web, Copyright © 2017</h3>
     </footer>
 </body>
-
 </html>

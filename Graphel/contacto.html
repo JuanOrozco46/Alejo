@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles.css"> <title>Graphel - Contacto</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Diseño <span>Multimedia</span></h1>
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="nosotros.html">NOSOTROS</a></li>
+                    <li><a href="servicios.html">SERVICIOS</a></li>
+                    <li><a href="contacto.html" class="active">CONTACTO</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="newsletter">
+        <div class="container">
+            <h1>Suscríbete a nuestro boletín</h1>
+            <form action="/enviar" method="POST">
+                <input type="email" id="correo-boletin" name="correo" placeholder="Ingrese el Email...">
+                <button type="submit">Suscribirse</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="main-container container">
+        
+        <article class="content-left">
+            <h3>Contacto</h3>
+            
+            <form class="contact-form">
+                <div class="form-group">
+                    <label>Nombre</label>
+                    <input type="text" placeholder="Ingresa tu nombre">
+                </div>
+
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" placeholder="Ingresa tu email">
+                </div>
+
+                <div class="form-group">
+                    <label>Teléfono</label>
+                    <input type="text" placeholder="Ingresa tu teléfono">
+                </div>
+
+                <div class="form-group">
+                    <label>Celular</label>
+                    <input type="text" placeholder="Ingresa tu celular">
+                </div>
+
+                <div class="form-group">
+                    <label>Mensaje</label>
+                    <textarea placeholder="Mensaje"></textarea>
+                </div>
+
+                <button type="submit" class="btn-main">Enviar</button>
+            </form>
+        </article>
+
+        <aside class="sidebar-right">
+            <div class="dark-box sidebar-box">
+                <h3>Que hacemos</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec varius auctor lacus nec feugiat. Phasellus sit amet ex ipsum. Praesent pharetra tincidunt tempor. Etiam velit eros, dapibus eget porta in, lacinia et magna</p>
+            </div>
+            
+            <div class="map-container">
+                <img src="/Graphel/images/mapaGoogle.png" alt="Mapa de ubicación">
+            </div>
+        </aside>
+
+    </section>
+
+    <footer>
+        <h3>Graphel Desarrollo Web, Copyright © 2017</h3>
+    </footer>
+</body>
+</html>
