@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Tareas Semáforo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="centro">
+        <h2>Mis Tareas</h2>
+
+        <input type="text" id="inputTarea" placeholder="Escribe tu tarea...">
+
+        <select id="inputColor">
+            <option value="rojo">PENDIENTE</option>
+            <option value="amarillo">EN PROCESO</option>
+            <option value="verde">FINALIZADO</option>
+        </select>
+
+        <button onclick="crearTarea()">Agregar</button>
+
+        <div id="contenedor-tarjetas"></div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
