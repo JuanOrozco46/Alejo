@@ -1,0 +1,41 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+    padding: 50px;
+}
+input, select {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+button {
+    background-color: #76ff03;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+#contenedor-tarjetas {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 15px; 
+}
+.tarjeta {
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-size: 18px;
+    min-width: 150px;
+}
+
+.rojo { 
+    background-color: #ffcccc;
+}
+.amarillo { 
+    background-color: #fff9c4;
+}
+.verde { 
+    background-color: #b9f6ca;
+}
