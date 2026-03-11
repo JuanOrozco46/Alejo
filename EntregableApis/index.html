@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="style.css" />
+        <script src="scripts/main.js" type="module"></script>
+        <title>Fetch API</title>
+    </head>
+    <body>
+        <h1>Dashboard de Personajes</h1>
+        <p class="subtitle">Ejemplo usando Fetch API</p>
+        <div class="controls">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Buscar por nombre..."
+            />
+            <button id="loadBtn">Cargar personajes</button>
+        </div>
+        <p id="status" class="status"></p>
+        <div id="postsContainer" class="grid"></div>
+    </body>
+</html>

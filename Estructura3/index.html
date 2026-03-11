@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="style.css" />
+        <script src="scripts/main.js" type="module"></script>
+        <title>Dashboard con Fetch API</title>
+    </head>
+    <body>
+        <h1>Dashboard de Publicaciones</h1>
+        <p class="subtitle">Ejemplo completo usando Fetch API y JS puro</p>
+        <div class="controls">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Buscar por título..."
+            />
+            <button id="loadBtn">Cargar publicaciones</button>
+        </div>
+        <p id="status" class="status"></p>
+        <div id="postsContainer" class="grid"></div>
+    </body>
+</html>

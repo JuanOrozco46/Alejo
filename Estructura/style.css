@@ -1,0 +1,135 @@
+.todo-card{
+    max-width: 420px;
+    padding: 16px 20px;
+    border-radius: 12px;
+    background-color: #d8d8d8;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    font-family:
+        system-ui,
+        -apple-system,
+        BlinkMacSystemfont,
+        sanss-serif;
+    transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.todo-card:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 10px 22px rgba(0,0,0,0.012);
+}
+.todo-id{
+    font-size:12px;
+    color:#6b7280;
+    background-color: #f3f4f6;
+    padding:4px  8px;
+    border-radius:999px;
+}
+todo.title{
+    font-size:18px;
+    font-weight:600;
+    color: #111827;
+    margin: 0,0,12px,0;
+}
+.todo-footer{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    font-size: 14px;
+}
+.todo-user{
+    color: #4b5563;
+}
+.todo-status {
+    padding: 6px 12px;
+    border-radius: 999px;
+    font-weight: 500;
+}
+
+.todo-status.completed {
+    background-color: #dcfce7;
+    color: #166534;
+}
+
+.todo-status.pending {
+    background-color: #fee2e2;
+    color: #991b1b;
+}
+
+button {
+    appearance: none;
+    border: none;
+    cursor: pointer;
+
+    padding: 12px 20px;
+    margin-bottom: 24px;
+
+    border-radius: 10px;
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    color: #ffffff;
+
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+
+    box-shadow: 0 6px 14px rgba(37, 99, 235, 0.35);
+    transition:
+        transform 0.15s ease,
+        box-shadow 0.15s ease,
+        background 0.2s ease;
+}
+
+/* Hover */
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(37, 99, 235, 0.45);
+    background: linear-gradient(135deg, #1d4ed8, #1e40af);
+}
+
+/* Active (click) */
+button:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 10px rgba(37, 99, 235, 0.35);
+}
+
+/* Focus (accesibilidad) */
+button:focus-visible {
+    outline: 3px solid #93c5fd;
+    outline-offset: 3px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 6px solid rgba(255, 255, 255, 0.2);
+    border-top-color: #38bdf8;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    position: absolute;
+    left: 47%;
+    top: 45%;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
