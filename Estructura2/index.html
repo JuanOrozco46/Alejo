@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard con fetch API</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1> Dashboard de publicaciones</h1>
+    <p class="subtitle"> Ejemplo completo usando Fetch API y JS puro</p>
+    <div class="controls">
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Buscar por título"
+        />
+        <button id="loadBtn">CArgar publicaciones</button>
+    </div>
+    <p id="status" class="status"></p>
+    <div id="postsContainer" class="grid"></div>
+</body>
+</html>

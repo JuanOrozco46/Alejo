@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard de Clima</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Dashboard de Clima</h1>
+    </header>
+    <main>
+        <section class="search-section">
+            <form id="search-form">
+                <input type="text" id="city-input" placeholder="Buscar ciudad..." required>
+                <button type="submit">Buscar</button>
+            </form>
+            <div id="message-container"></div>
+        </section>
+
+        <section class="weather-section" id="weather-container" style="display: none;">
+            <div class="weather-card">
+                <h2 id="city-name"></h2>
+                <div class="weather-info">
+                    <p><strong>Temperatura:</strong> <span id="temperature"></span> °C</p>
+                    <p><strong>Viento:</strong> <span id="windspeed"></span> km/h</p>
+                    <p><strong>Estado:</strong> <span id="weather-code"></span></p>
+                    <p><strong>Hora medición:</strong> <span id="measurement-time"></span></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="scripts/state.js"></script>
+    <script src="scripts/persistence.js"></script>
+    <script src="scripts/service.js"></script>
+    <script src="scripts/ui.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
