@@ -8,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'colores';
+  colorActual: string = '#E5E7EB';
+  nombreColor: string = 'Gris';
+
+  actualizarcolor(evento: {color: string, nombre: string}) {
+    this.colorActual = evento.color;
+    this.nombreColor = evento.nombre;
+  }
 }

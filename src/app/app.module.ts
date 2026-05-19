@@ -12,8 +12,7 @@ import { SelectorColoresComponent } from './selector-colores/selector-colores.co
     SelectorColoresComponent
   ],
   imports: [
-    BrowserModule,CuadroColorComponent, 
-    SelectorColoresComponent
+    BrowserModule
   ],
   providers: [],
   bootstrap: [AppComponent]

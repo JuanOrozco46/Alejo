@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-selector-colores',
@@ -7,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrl: './selector-colores.component.scss'
 })
 export class SelectorColoresComponent {
+  @Output() colorCambiado = new EventEmitter<{color: string, nombre: string}>();
 
+  seleccionarColor(color: string, nombre: string) {
+    this.colorCambiado.emit({ color, nombre });
+  }
 }
